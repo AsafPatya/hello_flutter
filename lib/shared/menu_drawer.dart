@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../screens/bmi_screen.dart';
 import '../screens/intro_screen.dart';
+import '../screens/weather_screen.dart';
 
 class MenuDrawer extends StatelessWidget {
   const MenuDrawer({Key? key}) : super(key: key);
@@ -52,8 +53,11 @@ class MenuDrawer extends StatelessWidget {
               case 'Home':
                 screen = IntroScreen();
                 break;
-              case   'BMI Calculator':
+              case 'BMI Calculator':
                 screen = BmiScreen();
+                break;
+              case 'Weather':
+                screen = WeatherScreen();
                 break;
             }
             // this lines are for remove the Drawer before we getting back to screen
